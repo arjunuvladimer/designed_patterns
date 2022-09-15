@@ -1,15 +1,18 @@
 package Singleton;
 
+// Eagar/ Early Instatiation
+
 public class AircraftEagar {
 
    // 1. So that instance created at load time
    // 2. private member -> No Outside class can access it to create instance
    // 3. static -> Inside AircraftEagar class you don't want any kind of new instance be loaded
-   private  static AircraftEagar instance = new AircraftEagar();
+   private  static AircraftEagar instance =  new AircraftEagar();;
 
    private AircraftEagar(){}
 
    public static AircraftEagar getInstance(){
+
        return instance;
    }
 
