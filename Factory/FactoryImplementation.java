@@ -65,6 +65,8 @@ public class FactoryImplementation{
     public static void main(String[] args){
         Aircraft boeing = AircraftFactory.getInstance("Boeing",2);
         System.out.println(boeing);
+        Aircraft boeing1 = AircraftFactory.getInstance("Boeing",2);
+        System.out.println(boeing);
 
     }
 }
